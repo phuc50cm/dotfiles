@@ -16,15 +16,17 @@ This repository contains my dotfiles, which are configuration files for various 
 ```bash
 git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+```
 
 ### Stow dotfiles
 Replace package with your dotfile you want to create symlink
 
 ```bash
 stow [package]
-
+```
 
 ### Unstowing
 
 ```bash
 stow -D [package]
+```
