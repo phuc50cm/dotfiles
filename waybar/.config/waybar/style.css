@@ -1,0 +1,113 @@
+@import url("./colors.css");
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Iosevka;
+    font-size: 11pt;
+    min-height: 0;
+    font-weight: bold;
+}
+window#waybar {
+    opacity: 0.9;
+    background: @background-darker;
+    color: @foreground;
+    border-bottom: 2px solid @background;
+}
+
+#window {
+    margin: 8px;
+    padding-left: 8;
+    padding-right: 8;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    background: @background;
+    color: @foreground;
+}
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background-image: linear-gradient(0deg, @selection, @background-darker);
+}
+#workspaces button.active {
+    background-image: linear-gradient(0deg, @purple, @selection);
+}
+#workspaces button.urgent {
+    background-image: linear-gradient(0deg, @red, @background-darker);
+}
+#taskbar button.active {
+    background-image: linear-gradient(0deg, @selection, @background-darker);
+}
+
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#tray,
+#network,
+#mode,
+#language,
+#scratchpad {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#language {
+    color: @orange;
+    border-bottom: 2px solid @orange;
+}
+
+#clock {
+    padding: 0 4px;
+    background: @background;
+}
+
+#pulseaudio {
+    color: @pink;
+    border-bottom: 2px solid @blue;
+}
+
+#temperature {
+    color: @red;
+    border-bottom: 2px solid @red;
+}
+
+#memory {
+    color: @cyan;
+    border-bottom: 2px solid @cyan;
+}
+
+#network {
+    color: @yellow;
+    border-bottom: 2px solid @yellow;
+}
+
+#cpu {
+    color: @purple;
+    border-bottom: 2px solid @purple;
+}
+
+#battery {
+    color: @green;
+    border-bottom: 2px solid @green;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
