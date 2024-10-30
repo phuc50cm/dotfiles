@@ -1,0 +1,1 @@
+This repository contains my personal configuration files for various applications and tools. The purpose of these dotfiles is to create a consistent and efficient working environment across different systems.
