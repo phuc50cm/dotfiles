@@ -7,3 +7,6 @@ promptinit
 prompt fade magenta 
 
 eval "$(starship init zsh)"
+
+# Cowsay
+fortune | cowsay -f tux
