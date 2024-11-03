@@ -9,4 +9,7 @@ prompt fade magenta
 eval "$(starship init zsh)"
 
 # Cowsay
-fortune | cowsay -f tux
+fortune | cowsay -f tux | lolcat
+
+# Alias
+alias ls='eza'
