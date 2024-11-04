@@ -81,6 +81,9 @@
             "deactivated": ""
         }
     },
+    "hyprland/window": {
+    	"format": "{class}",
+    },
     "tray": {
         // "icon-size": 21,
         "spacing": 10
@@ -124,6 +127,10 @@
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
+    },
+    "hyprland/language": {
+    	"format": "  {}",
+	"format-en": "EN (US)"
     },
     "battery#bat2": {
         "bat": "BAT2"
