@@ -19,7 +19,7 @@
         "cpu",
         "memory",
         "temperature",
-        "hyprland/language",
+	"custom/input_method",
         "battery",
         "clock",
     ],
@@ -131,6 +131,13 @@
     "hyprland/language": {
     	"format": "  {}",
 	"format-en": "EN (US)"
+    },
+    "custom/input_method": {
+    	"exec": "~/dotfiles/waybar/.config/waybar/fcitx5-input.sh",
+	"interval": 1,
+	"return-type": "text",
+	"format": "  {}",
+	"tooltip": false
     },
     "battery#bat2": {
         "bat": "BAT2"

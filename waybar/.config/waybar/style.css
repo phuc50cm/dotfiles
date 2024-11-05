@@ -53,6 +53,7 @@ window#waybar {
 #network,
 #mode,
 #language,
+#custom-input_method,
 #scratchpad {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -62,7 +63,7 @@ window#waybar {
   padding-right: 4px;
 }
 
-#language {
+#custom-input_method {
     color: @orange;
     border-bottom: 2px solid @orange;
 }
