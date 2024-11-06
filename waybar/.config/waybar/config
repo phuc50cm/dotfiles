@@ -136,7 +136,7 @@
     	"exec": "~/dotfiles/waybar/.config/waybar/fcitx5-input.sh",
 	"interval": 1,
 	"return-type": "text",
-	"format": "  {}",
+	"format": "{}   ",
 	"tooltip": false
     },
     "battery#bat2": {

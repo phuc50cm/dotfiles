@@ -13,3 +13,10 @@ fortune | cowsay -f tux | lolcat
 
 # Alias
 alias ls='eza'
+
+# bun completions
+[ -s "/home/phuc/.bun/_bun" ] && source "/home/phuc/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
