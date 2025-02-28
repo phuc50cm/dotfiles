@@ -62,9 +62,6 @@ return {
                 capabilities = capabilities
             })
             lspconfig.gopls.setup({
-                settings = {
-                    ["gopls"] = {},
-                },
                 capabilities = capabilities
             })
 
